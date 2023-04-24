@@ -1,0 +1,23 @@
+[
+    {
+        "label": "Mi nombre es:",
+        "input_type": "text",
+        "name": "nombre"
+    },
+    {
+        "label": "Mi apellido es:",
+        "input_type": "text",
+        "name": "apellido"
+    },
+    {
+        "label": "Mi correo electrónico es:",
+        "input_type": "email",
+        "name": "email"
+    },
+    {
+        "label": "Nací el día (DD/MM/AAAA):",
+        "input_type": "text",
+        "name": "nacimiento",
+        "placeholder": "(DD/MM/AAAA)"
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "label": "Headliner 1",
+        "input_type": "text",
+        "name": "headliner_1"
+    },
+    {
+        "label": "Headliner 2",
+        "input_type": "text",
+        "name": "headliner_2"
+
+    },
+    {
+        "label": "Latinoamericano 1",
+        "input_type": "text",
+        "name": "latinoamericano_1"
+    },
+
+    {
+        "label": "Latinoamericano 2",
+        "input_type": "text",
+        "name": "latinoamericano_2"
+    },
+
+    {
+        "label": "Latinoamericano 3",
+        "input_type": "text",
+        "name": "latinoamericano_3"
+    },
+
+    {
+        "label": "Latinoamericano 4",
+        "input_type": "text",
+        "name": "latinoamericano_4"
+    },
+    {
+        "label": "Nacional 1",
+        "input_type": "text",
+        "name": "nacional_1"
+    },
+
+    {
+        "label": "Nacional 2",
+        "input_type": "text",
+        "name": "nacional_2"
+    },
+
+    {
+        "label": "Nacional 3",
+        "input_type": "text",
+        "name": "nacional_3"
+    },
+
+    {
+        "label": "Nacional 4",
+        "input_type": "text",
+        "name": "nacional_4"
+    }
+
+]

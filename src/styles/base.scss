@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Imperial";
+  color: #222221;
+}
+
+.max_width_container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Frente Nacional";
+}
+
+.font-imperial {
+  font-family: "Imperial";
+}
+
+.font-frente {
+  font-family: "Frente Nacional";
+}
+
+input::placeholder {
+  color: #222221 !important;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
