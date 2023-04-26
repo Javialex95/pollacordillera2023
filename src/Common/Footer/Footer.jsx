@@ -30,9 +30,9 @@ export const Footer = () => {
         <div className="flex justify-between items-end">
           <p className="font-frente">cordillera Festival 2023 ®</p>
           <a
-            href="tag-home-politicaprivacidad"
+            href="https://paramopresenta.com/politicas.pdf"
             target="_blank"
-            className="underline font-frente"
+            className="underline font-frente tag-home-politicaprivacidad"
           >
             terminos y condiciones
           </a>

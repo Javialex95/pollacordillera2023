@@ -7,18 +7,20 @@ import { Button } from "../../../Common/Utils/Button";
 import { validate } from "../../../Helpers/validateForm";
 import { toggleModal } from "../../../Helpers/toggleModal";
 import formInfo from "./info/formInfo.json";
+import { TYC } from "./TYC";
 
 export const Form = () => {
   const { formState, onChange, onResetForm } = useForm(formInfo);
   const [buttonText, setButtonText] = useState("Enviar");
   const [bogota, setBogota] = useState("");
+  const [ytc, setYtc] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
 
     const url = "https://polla-cordillera.herokuapp.com/api/users/save-user";
 
-    if (validate(formState, bogota)) {
+    if (validate(formState, bogota, ytc)) {
     } else {
       setButtonText("Enviando");
       axios
@@ -40,6 +42,12 @@ export const Form = () => {
               document.querySelector(".form").classList.remove("show");
               onResetForm(formInfo);
             }, 500);
+
+            setButtonText("Enviado");
+
+            setTimeout(() => {
+              setButtonText("Enviar");
+            }, 2000);
           }
         })
         .catch(function (error) {
@@ -78,6 +86,8 @@ export const Form = () => {
           />
           <FormSlideTwo onChange={onChange} formState={formState} />
         </div>
+
+        <TYC ytc={ytc} setYtc={setYtc} />
 
         <p className="error-items pb-4 text-center  text-rojo hidden">
           Debes llenar todos los campos para participar

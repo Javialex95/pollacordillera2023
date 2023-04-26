@@ -1,4 +1,4 @@
-export const validate = (formItems, bogota) => {
+export const validate = (formItems, bogota, ytc) => {
   const error_items = document.querySelector(".error-items");
   let error;
   const {
@@ -35,7 +35,8 @@ export const validate = (formItems, bogota) => {
     nacional_2 === "" ||
     nacional_3 === "" ||
     nacional_4 === "" ||
-    bogota === ""
+    bogota === "" ||
+    ytc === false
   ) {
     error = true;
     error_items.classList.add("d-block");
