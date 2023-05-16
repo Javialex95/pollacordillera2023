@@ -13,7 +13,8 @@ module.exports = {
       naranja: "#DD5226",
       amarillo: "#F7E33E",
       verde: "#5A9E29",
-      rojo: "#CD0E24"
+      rojo: "#CD0E24",
+      white: "#FBF2E6",
       // ...
     },
   },

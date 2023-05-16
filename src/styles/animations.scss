@@ -1,16 +1,92 @@
-.opacity-1{
-    opacity: 1 !important;
+.opacity-1 {
+  opacity: 1 !important;
 }
 
-.show{
-    opacity: 1 !important;
-    visibility: visible !important;
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.overflow-hide{
-    overflow: hidden !important;
+.overflow-hide {
+  overflow: hidden !important;
 }
 
-.d-block{
-    display: block !important;
+.d-block {
+  display: block !important;
+}
+
+.anim_banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(3000px / 4);
+  height: 292px;
+  background: url("/assets/montana_movil.png");
+  animation: animate_banner 1s steps(4) infinite;
+
+  @media (min-width: 1002px) {
+    background: url("/assets/montanadesktop.png");
+    width: calc(6000px / 4);
+    height: 585px;
+    animation: animate_banner_destock 1s steps(4) infinite;
+  }
+}
+
+@keyframes animate_banner {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 3000px;
+  }
+}
+
+@keyframes animate_banner_destock {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 6000px;
+  }
+}
+
+.anim_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(1200px / 4);
+  height: 155px;
+  background: url("/assets/texto_cometa_movil.png");
+  animation: animate_text 1s steps(4) infinite;
+
+  @media (min-width: 1002px) {
+    background: url("/assets/textocometa_desktop.png");
+    width: calc(2000px / 4);
+    height: 259px;
+    animation: animate_text_destock 1s steps(4) infinite;
+  }
+}
+
+@keyframes animate_text {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 1200px;
+  }
+}
+
+@keyframes animate_text_destock {
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 2000px;
+  }
 }
