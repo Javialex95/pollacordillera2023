@@ -1,15 +1,35 @@
+import Media from "react-media";
 import social from "./socialMedia.json";
 
 export const Footer = () => {
   return (
     <section className="bg-naranja relative">
       <img
+       loading="lazy"
         className="absolute -top-5 w-full lg:-top-[60px]"
         src="/assets/ola_orange.png"
         alt="ola"
       />
       <div className="max_width_container text-center pb-5 relative ">
-        <img className="w-full" src="/assets/sponsors.png" alt="sponsors" />
+        <Media query="(max-width:767px)">
+          {(resolution) => {
+            return resolution ? (
+              <img
+              loading="lazy"
+                className="lg:h-[250px] object-contain m-auto block"
+                src="/assets/sponsors_movil.png"
+                alt=""
+              />
+            ) : (
+              <img
+              loading="lazy"
+                className="lg:h-[250px] object-contain m-auto block"
+                src="/assets/sponsors_desktop.png"
+                alt=""
+              />
+            );
+          }}
+        </Media>
 
         <div className="lg:flex justify-between mt-10">
           <a

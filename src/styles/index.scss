@@ -8,17 +8,17 @@
 
 @layer base {
   h1 {
-    @apply text-5xl lg:text-5xl;
+    @apply text-5xl lg:text-[150px];
   }
   h2 {
     @apply text-4xl lg:text-5xl;
   }
 
   h3 {
-    @apply text-2xl lg:text-2xl;
+    @apply text-2xl lg:text-6xl;
   }
 
   p {
-    @apply text-[15px]  lg:text-base;
+    @apply text-[13px]  lg:text-[25px];
   }
 }

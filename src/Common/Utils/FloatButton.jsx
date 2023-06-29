@@ -2,7 +2,7 @@ import React from "react";
 
 const FloatButton = () => {
   return (
-    <a target="_blank" href="https://www.eticket.co/masinformacion.aspx?idevento=13948">
+    <a target="_blank" href="https://www.eticket.co/eventos.aspx?idartista=580">
       <div
         className="group bg-rosado hover:bg-negro hover:text-rosado cursor-pointer hover:border-negro border
       rounded-[50%] z-50 fixed bottom-[5%] right-[5%] w-[80px] lg:w-[120px] lg:h-[120px] h-[80px] flex justify-center items-center"

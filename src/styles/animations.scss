@@ -20,15 +20,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(3000px / 4);
-  height: 292px;
+  width: calc(2000px / 4);
+  height: 183px;
   background: url("/assets/montana_movil.png");
   animation: animate_banner 1s steps(4) infinite;
 
   @media (min-width: 1002px) {
     background: url("/assets/montanadesktop.png");
     width: calc(6000px / 4);
-    height: 585px;
+    height: 584px;
     animation: animate_banner_destock 1s steps(4) infinite;
   }
 }
@@ -39,7 +39,7 @@
   }
 
   to {
-    background-position: 3000px;
+    background-position: 2000px;
   }
 }
 

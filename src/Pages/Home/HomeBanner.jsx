@@ -1,33 +1,41 @@
 import Media from "react-media";
-
+import { Link } from "react-scroll";
 export const HomeBanner = () => {
   return (
-    <section className="bg-naranja  pt-5 relative z-10 overflow-hidden lg:overflow-visible pb-[200px] lg:pb-[500px]">
+    <section className="bg-rosado ">
       <div className="max_width_container">
-        <div className="lg:h-[250px] ">
-          <Media query="(max-width:767px)">
+        <div className="relative">
+          <img
+            className="w-full top-5  relative z-40"
+            src="/assets/logo_montana.png"
+            alt="logo"
+          />
+
+          <Media query="(max-width:1000px)">
             {(resolution) => {
               return resolution ? (
-                <img
-                  className="lg:h-[250px] object-contain m-auto block"
-                  src="/assets/logo_movil.png"
-                  alt=""
-                />
+                ""
               ) : (
-                <img
-                  className="lg:h-[250px] object-contain m-auto block"
-                  src="/assets/logo_cordillera_pink.png"
-                  alt=""
-                />
+                <Link
+                  activeClass="active"
+                  to="cartelera"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  <div className=" group rounded-[50%] w-[150px] h-[150px] z-50 bg-amarillo border absolute -bottom-[20px] right-[45%] text-[25px] font-bold hover:bg-negro hover:text-amarillo cursor-pointer hover:border-negro flex justify-center items-center ">
+                    <button className="group-hover:scale-[1.2]  transition-all">
+                      VER CARTEL OFICIAL
+                    </button>
+                  </div>
+                </Link>
               );
             }}
           </Media>
         </div>
       </div>
-      <div className=" relative w-[110vw] -translate-x-[10vw] m-auto mt-20 lg:mt-0 lg:w-full lg:-translate-x-[0] lg:translate-y-10  ">
-        <div className=" anim_banner absolute top-[90px] lg:top-[260px] z-0"></div>
-        {/* <img className="w-[100%]" src="/assets/date.png" alt="" /> */}
-      </div>
+      <div className="bg-naranja absolute -bottom-[20%] w-full h-[200px] z-0"> </div>
     </section>
   );
 };

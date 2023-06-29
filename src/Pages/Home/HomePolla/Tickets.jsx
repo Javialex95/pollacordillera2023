@@ -25,7 +25,7 @@ const Tickets = () => {
 
         <a
           target="_blank"
-          href="https://www.eticket.co/masinformacion.aspx?idevento=13948"
+          href="https://www.eticket.co/eventos.aspx?idartista=580"
         >
           <Button styles="bg-azul mt-5 mb-10" text="Compra tus entradas aquí" />
         </a>
